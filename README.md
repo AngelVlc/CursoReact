@@ -18,6 +18,7 @@ yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2 (presets para babel)
 
 ## Ejecución
 
+1. yarn install
 1. babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
 1. live-server public
 
@@ -29,3 +30,7 @@ yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2 (presets para babel)
 <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
 ```
 
+
+## Extensiones para VS Code
+
+Babel ES6/ES7

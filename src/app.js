@@ -1,8 +1,44 @@
 console.log('app.js is ok');
 
-// JSX - Javascript XML
-var template = <p>Esto es JSX!</p>;
+const textoParrafo = 'Texto parrafo.';
 
-var appRoot = document.getElementById('app');
+const persona = {
+    nombre: 'nombre persona',
+    edad: 30,
+    options: [1, 2, 3]
+};
+
+function getLocation(persona) {
+    if (persona.location) {
+        return persona.location;
+    } else {
+        return 'sin location';
+    }
+}
+
+function getOtroTitulo() {
+    return <h5>Otro titulo</h5>
+}
+
+const getOtroParrafo = () => {
+    return <p>otro</p>
+};
+
+
+// JSX - Javascript XML
+const template = (
+    <div>
+        <h1>Pruebas React</h1>
+        <p>{textoParrafo}</p>
+        <p>Nombre: {persona.nombre}</p>
+        {persona.edad > 25 && <p>Edad: {persona.edad}</p>}   
+        <p>Location: {getLocation(persona)}</p>
+        { getOtroTitulo()}
+        { getOtroParrafo()}
+        
+    </div>
+);
+
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);
