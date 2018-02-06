@@ -11,3 +11,7 @@ npm install -g yarn (instalador de paquetes)
 ## Extensiones para VS Code
 
 Babel ES6/ES7
+
+## Extensiones para el navegador
+
+React Dev Tools
