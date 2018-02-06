@@ -1,11 +1,8 @@
-import validator from 'validator';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import IndecisionApp from './components/IndecisionApp';
 
-console.log(validator.isNumeric('a'));
+ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
 
-const template = (
-    <p>Hola</p>
-);
 
-ReactDOM.render(template, document.getElementById('app'));
+
