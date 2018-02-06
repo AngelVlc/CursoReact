@@ -2,11 +2,11 @@
 
 #### Configuración
 
-npm install -g yarn (instalador de paquetes)
+yarn install
 
 ## Ejecución
 
-1. npm run build
+1. yarn run dev-server
 
 ## Extensiones para VS Code
 
